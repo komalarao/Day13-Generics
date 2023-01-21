@@ -1,10 +1,10 @@
 package com.bridgelabz.generics;
 
-public class MaximumInteger {
+public class MaximumFloat {
 	
-	public static Integer maximumInteger(Integer num1, Integer num2, Integer num3) {
+	public static Float maximumFloat(Float num1, Float num2, Float num3) {
 
-		Integer maximumNumber = num1;
+		Float maximumNumber = num1;
 		if (num1.compareTo(num2) > 0 && num1.compareTo(num3) > 0)
 			maximumNumber = num1;
 		else if (num2.compareTo(num1) > 0 && num2.compareTo(num3) > 0)
@@ -12,10 +12,11 @@ public class MaximumInteger {
 		else
 			maximumNumber = num3;
 		return maximumNumber;
-	}
-	// print maximum number
 
-	public static void main(String[] args) {
-		System.out.println("Maximum Number among 3 will be: " + maximumInteger(70, 40, 50));
 	}
-}
+
+	// print maximum Float numbers
+	public static void main(String[] args) {
+		System.out.println("Maximum Float Number Among 3 will be :- " + maximumFloat(98.6f, 78.7f, 45.8f));
+	}
+}s
